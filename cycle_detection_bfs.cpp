@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool check_cycle(int n, vector<vector<int>> &graph)
+bool check_cycle(int n, vector<vector<pair<int, int>>> &graph)
 {
     vector<int> in_degree(n);
 
@@ -9,7 +9,7 @@ bool check_cycle(int n, vector<vector<int>> &graph)
     {
         for (auto j : graph[i])
         {
-            in_degree[j]++;
+            in_degree[j.first]++;
         }
     }
 
@@ -29,9 +29,9 @@ bool check_cycle(int n, vector<vector<int>> &graph)
 
         for (auto i : graph[node])
         {
-            in_degree[i]--;
-            if (!in_degree[i])
-                q.push(i);
+            in_degree[i.first]--;
+            if (!in_degree[i.first])
+                q.push(i.first);
         }
     }
 
@@ -46,14 +46,14 @@ int main()
     // Assumption for input: n vertices and m edges in the directed graph
     int n, m;
     cin >> n >> m;
-    vector<vector<int>> graph(n, vector<int>(0));
+    vector<vector<pair<int, int>>> graph(n);
 
-    int u, v;
+    int u, v, w;
     for (int i = 0; i < m; i++)
     {
-        // Assumption for input: edge is directed from u to v; both 0 indexed
-        cin >> u >> v;
-        graph[u].push_back(v);
+        // Assumption for input: edge is directed from u to v with weight w; 0 indexed
+        cin >> u >> v >> w;
+        graph[u].push_back(make_pair(v, w));
     }
 
     if (check_cycle(n, graph))

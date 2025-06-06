@@ -1,19 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool dfs(int i, vector<vector<int>> &graph, vector<int> &visited, vector<int> &path_visited)
+bool dfs(int i, vector<vector<pair<int, int>>> &graph, vector<int> &visited, vector<int> &path_visited)
 {
     visited[i] = 1;
     path_visited[i] = 1;
 
     for (auto j : graph[i])
     {
-        if (!visited[j])
+        if (!visited[j.first])
         {
-            if (dfs(j, graph, visited, path_visited))
+            if (dfs(j.first, graph, visited, path_visited))
                 return true;
         }
-        else if (path_visited[j])
+        else if (path_visited[j.first])
             return true;
     }
 
@@ -21,7 +21,7 @@ bool dfs(int i, vector<vector<int>> &graph, vector<int> &visited, vector<int> &p
     return false;
 }
 
-bool check_cycle(int n, vector<vector<int>> &graph)
+bool check_cycle(int n, vector<vector<pair<int, int>>> &graph)
 {
     vector<int> visited(n), path_visited(n);
 
@@ -42,14 +42,14 @@ int main()
     // Assumption for input: n vertices and m edges in the directed graph
     int n, m;
     cin >> n >> m;
-    vector<vector<int>> graph(n, vector<int>(0));
+    vector<vector<pair<int, int>>> graph(n);
 
-    int u, v;
+    int u, v, w;
     for (int i = 0; i < m; i++)
     {
-        // Assumption for input: edge is directed from u to v; both 0 indexed
-        cin >> u >> v;
-        graph[u].push_back(v);
+        // Assumption for input: edge is directed from u to v with weight w; 0 indexed
+        cin >> u >> v >> w;
+        graph[u].push_back(make_pair(v, w));
     }
 
     if (check_cycle(n, graph))
