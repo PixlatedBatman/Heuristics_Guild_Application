@@ -45,7 +45,7 @@ int main()
     // Assumption for input: n vertices and m edges in the directed graph
     int n, m;
     cin >> n >> m;
-    vector<vector<pair<int, int>>> graph(n, vector<pair<int, int>>(0));
+    vector<vector<pair<int, int>>> graph;
 
     int u, v, w;
     for (int i = 0; i < m; i++)
