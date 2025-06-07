@@ -1,25 +1,42 @@
 # Heuristics Guild Application
 
-## Karthik Kashyap (Author)
+## Karthik Kashyap (EE23B030)
 
-This repo contains all the codes and files pertaining to my application to join the Heuristics Guild 2025-26.
+This repository contains all code and related files submitted as part of my application to the **Heuristics Guild 2025–26**.
 
-The corresponding codes are as follows:
+---
 
-### Programming Section
+## Programming Section
 
-Q2.3a: Cycle Detection using [`DFS`](cycle_detection_dfs.cpp) and [`BFS`](cycle_detection_bfs.cpp).
+- **Q2.3a**: Cycle Detection
 
-Q2.3b: [`Shortest Path using Dijkstra's algorithm`](shortest_path_dijkstra.cpp). Mistaken to be Shortest Distance initially, so here are the codes using [`Topological sort`](shortest_distance_topo.cpp) and [`Dijkstra's algorithm`](shortest_distance_dijkstra.cpp).
+  - [`DFS`](cycle_detection_dfs.cpp)
+  - [`BFS`](cycle_detection_bfs.cpp)
 
-Q2.3c: [`Minimum Spanning Tree using Kruskal's algorithm`](mst_kruskal.cpp)
+- **Q2.3b**: Shortest Path
 
-Q2.3d: [`Strongly Connected Components and it's topological sort`](scc_kosaraju.cpp)
+  - [`Dijkstra's Algorithm`](shortest_path_dijkstra.cpp)
+  - _(Initially interpreted as Shortest Distance, so also included:)_
+    - [`Topological Sort`](shortest_distance_topo.cpp)
+    - [`Dijkstra’s Algorithm`](shortest_distance_dijkstra.cpp)
 
-### Heuristics Section
+- **Q2.3c**: [`Minimum Spanning Tree – Kruskal’s Algorithm`](mst_kruskal.cpp)
 
-Q4: [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
+- **Q2.3d**: [`Strongly Connected Components and Topological Sort`](scc_kosaraju.cpp)
 
-### Contest Write-up
+---
 
-Q5: The [`Contest Submission`](contest_v1_raw.cpp), [`Refined version`](contest_v1_refined.cpp) of the contest submission, and the [`Genetic Algorithm`](contest_v2_genetic.cpp) implementation, which was done after the contest.
+## Heuristics Section
+
+- **Q4**: [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
+
+---
+
+## Contest Write-up
+
+- **Q5**:
+  - [`Contest Submission (Raw Version)`](contest_v1_raw.cpp)
+  - [`Refined Version`](contest_v1_refined.cpp)
+  - [`Genetic Algorithm Implementation`](contest_v2_genetic.cpp)
+
+---
