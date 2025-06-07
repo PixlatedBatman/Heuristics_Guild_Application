@@ -1,12 +1,24 @@
 # Heuristics Guild Application
 
-## Karthik Kashyap (EE23B030)
+## 👤 Author
 
-This repository contains all code and related files submitted as part of my application to the **Heuristics Guild 2025–26**.
+**Karthik Kashyap**  
+_Dept. of Electrical Engineering_  
+_Roll No: EE23B030_
+
+- 💻 Codeforces: [PixlatedBatman](https://codeforces.com/profile/PixlatedBatman)
+- 🎯 HackerRank: [PixlatedBatman](https://www.hackerrank.com/PixlatedBatman)
 
 ---
 
-## Programming Section
+## 📄 Documents
+
+- [📝 Application Write-up](application.pdf)
+- [🧾 Contest Reflection / Write-up](write.pdf)
+
+---
+
+## 📁 Programming Section
 
 - **Q2.3a**: Cycle Detection
 
@@ -26,13 +38,13 @@ This repository contains all code and related files submitted as part of my appl
 
 ---
 
-## Heuristics Section
+## 🧠 Heuristics Section
 
 - **Q4**: [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
 
 ---
 
-## Contest Write-up
+## 📝 Contest Write-up
 
 - **Q5**:
   - [`Contest Submission (Raw Version)`](contest_v1_raw.cpp)
