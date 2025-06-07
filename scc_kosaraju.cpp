@@ -69,7 +69,7 @@ vector<vector<int>> scc(int n, vector<vector<pair<int, int>>> &graph)
     return vect_scc;
 }
 
-// Raw Topographical sorting function
+// Raw Topological sorting function
 vector<int> topo_sort(int n, vector<vector<int>> &graph)
 {
     vector<int> in_degree(n);
