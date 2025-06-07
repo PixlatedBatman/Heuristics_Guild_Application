@@ -37,7 +37,7 @@ void Main()
     double min_start_dist = 1e18;
     for (int i = 0; i < n; i++)
     {
-        double d = euclidean(x[i], y[i], 0, 0);
+        double d = euclidean(x[i], y[i], 0, 0) / v[i];
         if (d < min_start_dist)
         {
             min_start_dist = d;
