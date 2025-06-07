@@ -1,20 +1,18 @@
 # Heuristics Guild Application
 
-## 👤 Author
-
 **Karthik Kashyap**  
 _Dept. of Electrical Engineering_  
 _Roll No: EE23B030_
 
-- 💻 Codeforces: [PixlatedBatman](https://codeforces.com/profile/PixlatedBatman)
-- 🎯 HackerRank: [PixlatedBatman](https://www.hackerrank.com/PixlatedBatman)
+- Codeforces: [PixlatedBatman](https://codeforces.com/profile/PixlatedBatman)
+- HackerRank: [PixlatedBatman](https://www.hackerrank.com/PixlatedBatman)
 
 ---
 
-## 📄 Documents
+## Documents
 
-- [📝 Application Write-up](application.pdf)
-- [🧾 Contest Reflection / Write-up](write.pdf)
+- [Application ](KarthikKashyap_EE23B030_Application.pdf)
+- [Contest Write-up](KarthikKashyap_EE23B030_ContestWriteUp.pdf)
 
 ---
 
@@ -38,13 +36,13 @@ _Roll No: EE23B030_
 
 ---
 
-## 🧠 Heuristics Section
+## Heuristics Section
 
 - **Q4**: [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
 
 ---
 
-## 📝 Contest Write-up
+## Contest Write-up
 
 - **Q5**:
   - [`Contest Submission (Raw Version)`](contest_v1_raw.cpp)
