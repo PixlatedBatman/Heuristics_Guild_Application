@@ -14,7 +14,7 @@ void dfs(int node, vector<vector<pair<int, int>>> &graph, stack<int> &topo, vect
     topo.push(node);
 }
 
-int shortest_path(int n, vector<vector<pair<int, int>>> &graph, int node1, int node2)
+vector<int> shortest_path(int n, vector<vector<pair<int, int>>> &graph, int node1, int node2)
 {
     stack<int> topo;
     vector<int> visited(n);
@@ -37,7 +37,7 @@ int shortest_path(int n, vector<vector<pair<int, int>>> &graph, int node1, int n
         }
     }
 
-    return distance[node2];
+    return distance;
 }
 
 int main()
@@ -59,10 +59,10 @@ int main()
     int node1, node2;
     cin >> node1 >> node2;
 
-    int path_length = shortest_path(n, graph, node1, node2);
+    vector<int> path_length = shortest_path(n, graph, node1, node2);
 
-    if (path_length != INT32_MAX)
-        cout << path_length << endl;
+    if (path_length[node2] != INT32_MAX)
+        cout << path_length[node2] << endl;
     else
         cout << "There is no valid path from " << node1 << " to " << node2 << endl;
 }
