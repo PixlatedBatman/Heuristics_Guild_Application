@@ -38,7 +38,9 @@ _Roll No: EE23B030_
 
 ## Heuristics Section
 
-- **Q4**: [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
+- **Q4**: HackerRank Contest
+  - [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
+  - [`Updated code for $n <= 20$`](hamiltonian_cycle_N20.cpp)
 
 ---
 
