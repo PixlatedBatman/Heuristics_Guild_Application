@@ -13,6 +13,7 @@ _Roll No: EE23B030_
 
 - [Application ](KarthikKashyap_EE23B030_Application.pdf)
 - [Contest Write-up](KarthikKashyap_EE23B030_ContestWriteUp.pdf)
+- [Correction to Application: Hamiltonian Cycle](KarthikKashyap_EE23B030_CorrToApp_HamiltonianCycle.pdf)
 
 ---
 
@@ -40,7 +41,7 @@ _Roll No: EE23B030_
 
 - **Q4**: HackerRank Contest
   - [`Hamiltonian Cycle`](hamiltonian_cycle.cpp)
-  - [`Updated code for $n <= 20$`](hamiltonian_cycle_N20.cpp)
+  - [`Updated code for n <= 20`](hamiltonian_cycle_N20.cpp)
 
 ---
 

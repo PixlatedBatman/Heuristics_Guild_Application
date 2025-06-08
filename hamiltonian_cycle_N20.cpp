@@ -4,7 +4,6 @@ using namespace std;
 
 vector<int> check_cycle(int n, vector<vector<int>> &roads)
 {
-
     vector<vector<bool>> dp(n, vector<bool>(1 << n, false));
     vector<vector<int>> parent(n, vector<int>(1 << n, -1));
 
